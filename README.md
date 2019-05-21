@@ -28,6 +28,9 @@ Mappings:
 - créer stack
 
 ```bash
-aws cloudformation create-stack --template-body file://ec2_cloudformation_template.yaml --stack-name khacbaoanh-nguyen-template --parameters ParameterKey=KeyName,ParameterValue=khacbaoanh-nguyen-key ParameterKey=InstanceType,ParameterValue=t2.nano
+aws cloudformation create-stack \
+--template-body file://ec2_cloudformation_template.yaml \
+--stack-name khacbaoanh-nguyen-template \
+--parameters ParameterKey=KeyName,ParameterValue=khacbaoanh-nguyen-key \ ParameterKey=InstanceType,ParameterValue=t2.nano
 ```
 
